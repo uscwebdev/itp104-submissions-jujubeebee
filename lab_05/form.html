@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peer Stress Survey | ITP 104</title>
+	<style>
+		#header {
+			background-color: lightcoral;
+            color: #FFF;
+			font-size: 1.5em;
+			text-align: center;
+			height: 200px;
+			line-height: 200px;
+		}
+        table {
+                border-collapse: collapse;
+            }
+
+		.form-row {
+			margin: 10px 0px;
+			display: flex;
+		}
+		.left-col {
+			width: 200px;
+		}
+
+        #footer {
+            background-color: lightskyblue;
+            color: #FFF;
+            line-height: 50px;
+            text-align: center;
+            height: 50px;
+            font-size: 10px
+            }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+		<h1>Mid-Semester Check-In</h1>
+	</div> <!-- #header -->
+
+    <h2>Student Stress Survery</h2>
+
+    <p>Hello! We have finished Week 5 in the semester. Just wondering how y'all is doing!</p>
+
+    <form action="confirm.html">
+        <div class="form-row">
+
+            <div class="left-col">
+                <label for="name-id">Full Name:</label>
+            </div>
+
+            <input type="text" id="name-id" placeholder="Timothy Trojan">
+        </div>
+
+        <div class="form-row">
+
+            <div class="left-col">
+                <label for="email-id">Email:</label>
+            </div>
+
+            <input type="email" id="email-id" placeholder="timtroj@usc.edu">
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                <label for="grade-id">Grade Level:</label>
+            </div>
+
+            <select id="grade-id">
+                <option>Freshman</option>
+                <option>Sophomore</option>
+                <option>Junior</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                What's causing you stress?
+            </div>
+
+            <label>
+                <input type="checkbox">
+                Academics
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Recruitment
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Current job
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Finances
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Social life
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Other
+            </label>
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                How is your semester going so far?
+            </div>
+
+            <label>
+                <input type="radio" name="grade">
+                Amazing! Best year yet! 
+            </label>
+
+            <label>
+                <input type="radio" name="grade">
+                Fine
+            </label>
+
+            <label>
+                <input type="radio" name="grade">
+                Not too bad
+            </label>
+
+            <label>
+                <input type="radio" name="grade">
+                Let's just say: not my best year.
+            </label>
+
+            <label>
+                <input type="radio" name="grade">
+                Wait... we started school?
+            </label>
+
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                <label for="msg-id">Any other thoughts you want to share about your school year thus far?</label>
+            </div>
+
+            <textarea id="msg-id" placeholder="My thoughts are..."></textarea>
+        </div>
+    
+        <div class="form-row">
+            <label>
+                <input type="checkbox" name="terms">
+                I have read the terms and conditions
+            </label>
+        </div>
+
+        <div class="form-row">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    </div> <!-- #main -->
+
+    <div id="footer">
+        University of Southern California - ITP 104 - Lab 5 - Judy Ly&copy; 2023
+    </div> <!-- #footer -->
+
+</body>
+</html>
