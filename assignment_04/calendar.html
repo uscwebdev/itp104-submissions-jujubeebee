@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Fall Calendar</title>
+	<style>
+		#main {
+            width: 1100px; 
+            margin-left: auto;
+			margin-right: auto;
+        }
+
+        #header{
+            background-image: url('img/falltheme.jpg');
+            height: 500px;
+			line-height: 500px;
+            text-align: center;
+            color: white;
+            text-shadow: 0px 0px 10px #000;
+        }
+
+        th {
+			border: 1px solid #CCC;
+			border-bottom: 3px solid #CCC;
+			text-align: center;
+			width: 156px;
+			padding: 10px 0px;
+		}
+
+		td {
+			border: 1px solid #CCC;
+			vertical-align: text-top;
+			width: 156px;
+            height: 156px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+        .empty {
+            background-color: lightgrey;
+        }
+
+        .event{
+            color: aquamarine;
+        }
+
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>September 2023</h1>
+	</div> <!-- #header -->
+
+	<div id="main">
+
+		<table>
+			<tr>
+				<th>Sun</th>
+				<th>Mon</th>
+				<th>Tues</th>
+				<th>Thurs</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+			</tr>
+
+			<tr>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+                <td class="empty"></td>
+                <td>1</td>
+                <td>2</td>
+			</tr>
+
+			<tr>
+				<td>3</td>
+				<td>4</td>
+				<td class="event">5 - Friend's Birthday<img src="img/cake.png" width="156" height="156"></td>
+				<td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+			</tr>
+
+            <tr>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+                <td class="event">14 - Career Fair<img src="img/career.png" width="156" height="156"></td>
+                <td>15</td>
+                <td>16</td>
+			</tr>
+
+            <tr>
+				<td class="event">17 - U-Pass Deadline<img src="img/bus.png" width="156" height="156"></td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+			</tr>
+
+            <tr>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>20</td>
+			</tr>
+		</table>
+	</div> <!-- #main -->
+
+	<div id="footer">
+		University of Southern California &copy; 2018
+	</div> <!-- #footer -->
+
+</body>
+</html>
