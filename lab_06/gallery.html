@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Gallery</title>
+	
+	<link rel="stylesheet" href="food.css">
+	
+	<style>
+		
+		/* Image Gallery */
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+		}
+		.thumbnail {
+			width: 150px;
+			height: auto;
+			margin: 10px;
+			opacity: 0.5; 
+	
+		}
+
+		.thumbnail:hover {
+			opacity: 2.0;
+		}
+
+		.img-container > p {
+			text-align: center;
+			visibility: hidden;
+		}
+
+
+		.thumbnail:hover + p {
+			visibility: visible;
+		}
+
+	</style>
+</head>
+<body>
+
+<h1>Things I've Eaten In This Past Month</h1>
+    <div id="gallery">
+
+        <div class="img-container">
+            <img class="thumbnail" src="img/cake.png" alt="Cake">
+            <p>Cake</p>
+        </div>
+        
+        <div class="img-container">
+            <img class="thumbnail" src="img/chicken.png" alt="Chicken Katsu">
+            <p>Chicken Katsu</p>
+        </div>
+
+        <div class="img-container">
+            <img class="thumbnail" src="img/seafood.png" alt="Seafood Dinner">
+            <p>Seafood Dinner</p>
+        </div>
+
+        <div class="img-container">
+            <img class="thumbnail" src="img/takeout.png" alt="Chinese Takeout">
+            <p>Chinese Takeout</p>
+
+            <div class="img-container">
+                <img class="thumbnail" src="img/snack.png" alt="Snack">
+                <p>Snack</p>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
