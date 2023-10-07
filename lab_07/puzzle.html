@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Capybara Puzzle</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+    
+        #puzzle{
+            margin-left: auto;
+            margin-right: auto;
+            width: 610px;
+            height: auto;
+            position: static;
+            display: flex;
+            flex-wrap: wrap;
+            flex: row;
+        }
+
+        #piece{
+            position: static;
+            border: 10px black;
+        }
+
+        .piece-1 > img {
+            position: absolute;
+            left: 100px;
+            top: 50px;
+            box-shadow: 10px 5px 5px black;
+        }
+
+        .piece-2 > img {
+            position: absolute;
+            bottom: 50px;
+            left: 100px;
+            box-shadow: 10px 5px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Capybara Puzzle</h1>
+
+    <div id="container">
+        <div id="puzzle">
+            <div class="piece"> 
+                <img src="img/row-1-column-1.png" alt="Capybara puzzle piece">
+            </div>
+            <div class="piece"> 
+                <img src="img/row-1-column-2.png" alt="Capybara puzzle piece">
+            </div>
+            <div class="piece"> 
+                <img src="img/row-1-column-3.png" alt="Capybara puzzle piece">
+            </div> 
+            <div id="piece-1"> 
+                <img src="img/row-2-column-1.png" alt="Capybara puzzle piece">
+            </div> 
+            <div class="piece"> 
+                <img src="img/row-2-column-2.png" alt="Capybara puzzle piece">
+            </div>  
+            <div class="piece"> 
+                <img src="img/row-2-column-3.png" alt="Capybara puzzle piece">
+            </div>
+            <div class="piece"> 
+                <img src="img/row-3-column-1.png" alt="Capybara puzzle piece">
+            </div>
+            <div class="piece"> 
+                <img src="img/row-3-column-2.png" alt="Capybara puzzle piece">
+            </div>
+            <div id="piece-2"> 
+                <img src="img/row-3-column-3.png" alt="Capybara puzzle piece">
+            </div>
+        </div>	
+    </div>	
+
+
+    <!-- <div id="container">
+        <div id="puzzle">
+            <img src="img/row-1-column-1.png" alt="Capybara puzzle piece">
+            <img src="img/row-1-column-2.png" alt="Capybara puzzle piece">
+            <img id="piece-1" src="img/row-1-column-3.png" alt="Capybara puzzle piece">
+            <img src="img/row-2-column-1.png" alt="Capybara puzzle piece">
+            <img src="img/row-2-column-2.png" alt="Capybara puzzle piece">
+            <img src="img/row-2-column-3.png" alt="Capybara puzzle piece">
+            <img src="img/row-3-column-1.png" alt="Capybara puzzle piece">
+            <img src="img/row-3-column-2.png" alt="Capybara puzzle piece">
+            <img id="piece-2" src="img/row-3-column-3.png" alt="Capybara puzzle piece">
+        </div>	
+    </div>	  -->
+
+</body>
+
+</html>
