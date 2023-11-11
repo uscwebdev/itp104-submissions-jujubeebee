@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Capybara Pics</title>
+
+    <style>
+        #parent{
+            display: flex;
+            position: static;
+        }
+        #img1{
+            position: absolute;
+            border: 10px gray;
+        }
+
+        #img2{
+            position: relative;
+            /* left: 50px; */
+            border: 10px gray;
+            left: 50px;
+        }
+
+        #img3{
+            position: relative;
+            /* bottom: 605px;
+            left: 100px; */
+            left: 50px;
+        }
+
+        #parent {
+			transition: all
+		}
+
+        #parent:hover {
+            transform: translate(-100px, 50px);
+        }
+        
+        /*         
+		.img2:hover {
+			transform: translate(-50px);
+		}
+        .img3:hover {
+			transform: translate(-100px,-605px);
+		} */
+        
+    </style>
+</head>
+
+<body>
+<div id="parent">
+    <div id="translate"> 
+        <img src="img/1.png" alt="Capybara in greenery">
+    </div>
+    <div id="translate"> 
+        <img src="img/2.png" alt="Capybara near cottage">
+    </div>
+    <div id="translate"> 
+        <img src="img/3.png" alt="Capybara bathing">
+    </div> 
+</div>
+
+</body>
+
+</html>
