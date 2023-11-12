@@ -3,7 +3,7 @@
 <head>
     <title>Capybara Pics</title>
 
-    <style>
+    <!-- <style>
         #parent{
             display: flex;
             position: static;
@@ -55,6 +55,42 @@
         <img src="img/2.png" alt="Capybara near cottage">
     </div>
     <div id="translate"> 
+        <img src="img/3.png" alt="Capybara bathing">
+    </div> 
+</div> -->
+
+<style>
+    #parent{
+        display: flex;
+        position: static;
+        transition: all;
+    }
+
+    .img-container{
+        position: relative;
+        border: 10px gray;
+    }
+
+    #parent:hover .img-container:nth-child(2) {
+        transform: translate(200px);
+    }
+
+    #parent:hover .img-container:nth-child(3) {
+        transform: translate(300px);
+    }
+    
+</style>
+</head>
+
+<body>
+<div id="parent">
+    <div class="img-container"> 
+        <img src="img/1.png" alt="Capybara in greenery">
+    </div>
+    <div class="img-container"> 
+        <img src="img/2.png" alt="Capybara near cottage">
+    </div>
+    <div class="img-container"> 
         <img src="img/3.png" alt="Capybara bathing">
     </div> 
 </div>
