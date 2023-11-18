@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Capybara Puzzle</title>
+    
+    <style>
+        h1{
+            text-align: center;
+        }
+    
+        #puzzle{
+            margin-left: auto;
+            margin-right: auto;
+            width: 650px;
+            height: auto;
+            position: static;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #piece{
+            position: absolute;
+            border: 10px black;
+        }
+
+        
+        .l_m{
+            position: relative;
+            bottom: 50px;
+            left: 100px;
+            box-shadow: 10px 5px 5px black;
+        
+        }
+        .r_b{
+            position: relative;
+            bottom: 20px;
+            right: 50px;
+            box-shadow: 10px 5px 5px black;
+            
+        }
+        .piece{
+            margin:2px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Capybara Puzzle</h1>
+
+    <div id="container">
+        <div id="puzzle">
+            <div class="piece piece1"> 
+                <img src="img/row-1-column-1.png" alt="Capybara puzzle piece">
+            </div>
+            <div class="piece piece2"> 
+                <img src="img/row-1-column-2.png" alt="Capybara puzzle piece">
+            </div>
+            <div class="piece piece3"> 
+                <img src="img/row-1-column-3.png" alt="Capybara puzzle piece">
+            </div> 
+            <div id="piece-1 piece4"> 
+                <img class="l_m" src="img/row-2-column-1.png" alt="Capybara puzzle piece">
+            </div> 
+            <div class="piece piece5"> 
+                <img src="img/row-2-column-2.png" alt="Capybara puzzle piece">
+            </div>  
+            <div class="piece piece6"> 
+                <img src="img/row-2-column-3.png" alt="Capybara puzzle piece">
+            </div>
+            <div class="piece piece7"> 
+                <img src="img/row-3-column-1.png" alt="Capybara puzzle piece">
+            </div>
+            <div class="piece piece8"> 
+                <img src="img/row-3-column-2.png" alt="Capybara puzzle piece">
+            </div>
+            <div id="piece-2 piece9"> 
+                <img class="r_b" src="img/row-3-column-3.png" alt="Capybara puzzle piece">
+            </div>
+        </div>	
+    </div>	
+
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+	<script>
+        var draggableElements = document.querySelectorAll('.piece img');
+        var draggable = [];
+    
+        for (var i = 0; i < draggableElements.length; i++) {
+            var draggie = new Draggabilly(draggableElements[i].parentNode, {
+                containment: true
+            });
+            draggable.push(draggie);
+        }
+    </script>
+</body>
+
+</html>
