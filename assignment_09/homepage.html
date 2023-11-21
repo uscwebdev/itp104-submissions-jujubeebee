@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    
+<title>Home | Judy's Portfolio</title>
+
+<link href="port.css" rel="stylesheet">
+
+<meta name="description" content="Discover Judy Ly's portfolio about UX design, powerlifting event consultancy, 
+    and design/marketing projects at a FinTech start-up. Check out her design process and problem-solving skills 
+    through her project walkthroughs. Contact Judy through LinkedIn or email for more information on her work. .">
+
+<style>
+    /* title and subtitle */
+    #title-subtitle{
+        display: flex;
+        width: 1074px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    /* gallery section  */
+    #gallery-sec{
+        display: flex;
+        padding: 42px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 42px; 
+        align-self: stretch;
+    }
+
+    #gallery-cards-sec{
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+
+    .gallery-card-single{
+        display: flex;
+        min-width: 320px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        flex: 1 0 0;
+    }
+
+    .gallery-card-image{
+        width: 395px;
+        height: 330px;
+    }
+
+    /* extra section  */
+    #extra-sec{
+        display: flex;
+        padding: 42px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 42px; 
+        align-self: stretch;
+    }
+
+    #extra-cards-sec{
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+
+    .extra-card-single{
+        display: flex;
+        min-width: 320px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        flex: 1 0 0;
+    }
+
+    .extra-card-image{
+        width: 604px;
+        height: 330px;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <!-- nav menu -->
+    <div id="nav-menu">
+        <a style="text-decoration: none;" id="nav-highlight" href="homepage.html">Home</a>
+        <a style="text-decoration: none;" href="work.html">Work</a>
+        <a style="text-decoration: none;" href="resume.html">Resume</a>
+        <a style="text-decoration: none;" href="About.html">About</a>
+        <a style="text-decoration: none;" href="contact.html">Contact</a>
+    </div>
+
+    <!-- title and subtitle -->
+    <div id="title-subtitle">
+        <h1>Hello, I'm Judy!</h1>
+        <p class="body">I'm a graduating senior at USC Marshall majoring in business administration</p>
+    </div>
+
+    <!-- gallery -->
+    <div id="gallery-sec">
+        <h2>I've worked in</h2>
+            <!-- gallery cards section -->
+            <div id="gallery-cards-sec">
+                <!-- card 1 -->
+                <div class="gallery-card-single">
+                    <img class="gallery-card-image" alt="Work" src="img/app-screen.png">
+                    <p class="subtitle">Business Analysis</p>
+                    <p class="body">for product iterations and app store search optimization</p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="gallery-card-single">
+                    <img class="gallery-card-image" alt="Work" src="img/ux-design.png">
+                    <p class="subtitle">UX Design</p>
+                    <p class="body">for marketing and student prototypes</p>
+                </div>
+
+                <!-- card 3 -->
+                <div class="gallery-card-single">
+                    <img class="gallery-card-image" alt="Work" src="img/powerlifting.png">
+                    <p class="subtitle">Powerlifting</p>
+                    <p class="body">as an event consultant, state referee, and amatuer lifter</p>
+                </div>
+            </div>
+    </div>
+
+    <!-- extra -->
+    <div id="extra-sec">
+        <h2>On the side,</h2>
+            <!-- cards section -->
+            <div id="extra-cards-sec">
+                <!-- card 1 -->
+                <div class="extra-card-single">
+                    <img class="extra-card-image" alt="Work" src="img/coding.png">
+                    <p class="subtitle">I am learning to code</p>
+                    <p class="body">HTML/CSS and Python</p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="extra-card-single">
+                    <img class="extra-card-image" alt="Work" src="img/usc-vita.png">
+                    <p class="subtitle">I provided pro bono tax return services</p>
+                    <p class="body">for moderate income household as a former USC VITA board member</p>
+                </div>
+            </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <h2>Let's connect</h2>
+        <p class="body">Reach out to me on LinkedIn or my email. Looking forward to chatting!</p>
+        <div id="social-links">
+            <img class="icon" alt="social" src="img/email.png">
+            <img class="icon" alt="social" src="img/linkedin.png">
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
