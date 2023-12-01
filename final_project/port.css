@@ -1,0 +1,109 @@
+/* overall */
+@font-face {
+    src: url('fonts/Epilogue-VariableFont_wght.ttf');
+    font-family: "Epilogue";
+}
+
+#container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* nav menu */
+#nav-menu{
+    display: flex;
+    padding: 24px 42px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+#nav-highlight, #nav-menu a:hover {
+padding-bottom: 2px;
+border-bottom: 2px solid #2D2D2D;
+}
+
+a:link, a:visited, a:active{
+    color: var(--Black, #2D2D2D);
+    font-family: Epilogue;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+/* footer  */
+#footer{
+    display: flex;
+    padding: 42px 24px 86px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+#social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.icon{
+    width: 36px;
+    height: 36px;
+}
+
+/* typography  */
+h1{
+    color: var(--Black, #2D2D2D);
+    font-family: Epilogue;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h2{
+    color: var(--Black, #2D2D2D);
+    font-family: Epilogue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.subtitle{
+    color: var(--Black, #2D2D2D);
+    font-family: Epilogue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.body{
+    color: var(--Black, #2D2D2D);
+    font-family: Epilogue;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}

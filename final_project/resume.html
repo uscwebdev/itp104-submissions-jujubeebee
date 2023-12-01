@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    
+<title>Resume | Judy's Portfolio</title>
+
+<link href="port.css" rel="stylesheet">
+
+<meta name="description" content="Judy Ly's portfolio...">
+
+<style>
+    #resume-sec{
+        display: flex;
+        width: 1280px;
+        padding: 42px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 21px;
+    }
+
+    #text-pdf{
+        display: flex;
+        min-width: 320px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        flex: 1 0 0;
+    }
+
+    #title-subtitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        width: 708px;
+        /* align-self: stretch; */
+        text-align: center;
+    }
+
+
+</style>
+
+</head>
+
+<html>
+
+<body>
+<div id="container">
+        <!-- nav menu -->
+        <div id="nav-menu">
+            <a style="text-decoration: none;" href="homepage.html">Home</a>
+            <!-- <a style="text-decoration: none;" href="work.html">Work</a> -->
+            <a style="text-decoration: none;" id="nav-highlight" href="resume.html">Resume</a>
+            <a style="text-decoration: none;" href="About.html">About</a>
+            <a style="text-decoration: none;" href="contact.html">Contact</a>
+        </div>
+
+        <!-- resume-sec -->
+        <div id="resume-sec">
+            <h1>Resume</h1>
+            <div id="text-pdf">
+                <div id="title-subtitle">
+                    <h2>Check out my work experience</h2>
+                    <p class="body">
+                        To see the PDF in full screen, click download on the right hand corner
+                    </p>
+                </div>
+                <div id="resume">
+                    <!-- <embed src="resume.pdf" width="708px" height="828px"> -->
+                    <iframe id="pdf" src="resume.pdf" style="height:828px;width:708px" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <h2>Let's connect</h2>
+            <p class="body">Reach out to me on LinkedIn or my email. Looking forward to chatting!</p>
+            <div id="social-links">
+                <a href="mailto:judyly@usc.edu">
+                    <img class="icon" alt="social" src="img/email.png">
+                </a>
+                <a href="https://www.linkedin.com/in/jujudyly/">
+                    <img class="icon" alt="social" src="img/linkedin.png">
+                </a>
+            </div>
+        </div>
+</div>
+</body>
+
+</html>
